@@ -1,4 +1,3 @@
-$(function() {
   $(window).scroll(function() {
     var dy = $(this).scrollTop();
     console.log(dy);
@@ -282,5 +281,4 @@ $(function() {
       $('#bg0').css('opacity', '0');
     }
 
-  })
-});
+  });
