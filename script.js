@@ -1,4 +1,4 @@
-  $(window).scroll(function() {
+  window.addEventListener('DOMContentLoaded', function(){
     var dy = $(this).scrollTop();
     console.log(dy);
     
