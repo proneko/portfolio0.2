@@ -1,0 +1,269 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 9200px;
+  overflow-x: hidden;
+}
+
+
+.box {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+
+#bg0 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  width: 30%;
+  padding: 70px 100px;
+  z-index: 1;
+}
+#bg0  ul {
+  position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#bg0 ul li {
+  position: relative;
+  list-style: none;
+}
+#bg0 ul li:hover {
+  border-bottom: black solid 1px;
+}
+#bg0 ul li a {
+	position: relative;
+  margin: 0 15px;
+  color: black;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -999;
+  size: cover;
+}
+
+
+#bg1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+#bg1 .header_logo {
+  display: flex;
+  width: 100%;
+  padding-top: 90px;
+  padding-left: 140px;
+}
+#bg1 .logo {
+  width: 50px;
+  height: 50px;
+}
+#bg1 .name {
+  margin: 0;
+  font-size: 40px;
+  top: -10px;
+}
+#bg1 .content {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-top: 200px;
+  justify-content: center;
+}
+#bg1 .content h2 {
+  font-size: 60px;
+}
+
+
+#bg2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.about {
+  height: 100vh;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.about .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  background: #fff;
+  margin: 200px auto;
+}
+.about .container .serviceBx {
+  position: relative;
+  background: #fff;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .container .serviceBx img {
+  max-width: 300px;
+}
+.about .container .serviceBx h2 {
+font-weight: 500;
+font-size: 20px;
+letter-spacing: 1px;
+}
+
+
+#bg3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.services {
+  height: 100vh;
+  padding: 10px;
+  text-align: center;
+}
+.services .heading {
+  font-size: 60px;
+  font-weight: 200;
+}
+.services .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.services .container .serviceBx {
+  position: relative;
+  background: #fff;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .container .serviceBx img {
+  max-width: 100px;
+}
+.services .container .serviceBx h2 {
+font-weight: 500;
+font-size: 20px;
+letter-spacing: 1px;
+}
+
+#bg4 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -9;
+}
+.works {
+  padding: 10px;
+  text-align: center;
+  height: 100vh;
+}
+.works .heading {
+  font-size: 60px;
+  font-weight: 200;
+}
+.works .container {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.works .container .contentBx_img {
+  width: 550px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  transition: 1.0s;
+  z-index: 0;
+}
+.contentBx_img:hover {
+  opacity: 0.5;
+}
+.contentBx_img {
+  padding: 0;
+  width: 550px;
+  cursor: pointer;
+}
+.contentBx_img img {
+  max-width: 100%;
+}
+
+
+#bg5 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -99;
+}
+.footer {
+  height: 100vh;
+  text-align: center;
+  padding: 10px;
+}
+#bg5 .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 200px 200px 300px;
+}
+#bg5 .container ul {
+  position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#bg5 .container ul li {
+  position: relative;
+  list-style: none;
+  font-size: 50px;
+}
+#bg5 ul li:hover {
+  border-bottom: black solid 2px;
+}
+#bg5 .container ul li a {
+	position: relative;
+  margin: 0 100px;
+  color: black;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
