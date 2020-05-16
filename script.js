@@ -1,8 +1,11 @@
-  window.addEventListener('DOMContentLoaded', function(){
+$ (function() {
+  $(window).scroll(function() {
+    
     var dy = $(this).scrollTop();
     console.log(dy);
+
     
-    $('#bg1').css('position', '0 '+dy+'px');
+    $('#bg1').css('position', '0 0');
 
     if (dy > 0) {
       $('#bg1').css('opacity', '1');
@@ -37,8 +40,10 @@
     if (dy > 1000) {
       $('#bg1').css('opacity', '0');
     }
-    
+
     if (dy > 1100) {
+      $('#bg2').css('opacity', '0');
+    }else {
       $('#bg2').css('opacity', '0');
     }
     if (dy > 1200) {
@@ -103,6 +108,8 @@
     }
 
     if (dy > 3200) {
+      $('#bg3').css('opacity', '0');
+    }else {
       $('#bg3').css('opacity', '0');
     }
     if (dy > 3300) {
@@ -171,6 +178,7 @@
       $('#bg4').css('z-index', '9');
     }else {
       $('#bg4').css('z-index', '-9');
+      $('#bg4').css('opacity', '0');
     }
     if (dy > 5400) {
       $('#bg4').css('opacity', '0.1');
@@ -239,6 +247,7 @@
       $('#bg5').css('z-index', '99');
     }else {
       $('#bg5').css('z-index', '-99');
+      $('#bg5').css('opacity', '0');
     }
     if (dy > 7500) {
       $('#bg5').css('opacity', '0.1');
@@ -282,3 +291,4 @@
     }
 
   });
+});
