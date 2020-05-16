@@ -5,6 +5,10 @@ body {
   padding: 0;
   height: 9200px;
   overflow-x: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 
@@ -12,6 +16,15 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
+}
+
+
+.wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
 }
 
 
@@ -57,18 +70,21 @@ body {
   min-width: 100%;
   min-height: 100%;
   width: auto;
-  height: auto;
+  height: 110%;
   z-index: -999;
   size: cover;
+  overflow-x: hidden;
 }
 
 
 #bg1 {
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 1;
+  overflow-x: hidden;
+  width: 100%;
 }
 #bg1 .header_logo {
   display: flex;
@@ -85,24 +101,25 @@ body {
   font-size: 40px;
   top: -10px;
 }
-#bg1 .content {
+#bg1 h2 {
   width: 100%;
   text-align: center;
   align-items: center;
   margin-top: 200px;
   justify-content: center;
 }
-#bg1 .content h2 {
+#bg1 h2 {
   font-size: 60px;
 }
 
 
 #bg2 {
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 0;
+  width: 100%;
 }
 .about {
   height: 100vh;
@@ -112,14 +129,13 @@ body {
   align-items: center;
 }
 .about .container {
-  width: 80%;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 60px;
   background: #fff;
   margin: 200px auto;
+  width: 80%;
 }
 .about .container .serviceBx {
   position: relative;
@@ -142,10 +158,11 @@ letter-spacing: 1px;
 
 #bg3 {
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 0;
+  width: 100%;
 }
 .services {
   height: 100vh;
@@ -184,11 +201,12 @@ letter-spacing: 1px;
 
 #bg4 {
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 0;
   z-index: -9;
+  width: 100%;
 }
 .works {
   padding: 10px;
@@ -228,11 +246,12 @@ letter-spacing: 1px;
 
 #bg5 {
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 0;
   z-index: -99;
+  width: 100%;
 }
 .footer {
   height: 100vh;
@@ -266,4 +285,51 @@ letter-spacing: 1px;
 	text-decoration: none;
 	letter-spacing: 2px;
 	font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  #bg2 .container {
+    width: 100%;
+  }
+}
+@media (max-width: 660px) {
+  #bg1 .header_logo {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+  #bg1 .logo {
+    width: 30px;
+    height: 30px;
+  }
+  #bg1 .name {
+    margin: 0;
+    font-size: 20px;
+    top: -10px;
+  }
+  #bg0 {
+    top: 0;
+    width: 100%;
+    padding: 120px 0 0;
+  }
+  #bg0 ul {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 520px) {
+  .about .container .serviceBx img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 440px) {
+  #bg0 ul li {
+    font-size: 10px;
+  }
+  #bg2 .container {
+    flex-wrap: wrap-reverse;
+  }
+  .about .container .serviceBx {
+    height: 200px;
+    line-height: 40px;
+  }
 }
