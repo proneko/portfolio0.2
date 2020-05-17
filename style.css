@@ -38,7 +38,7 @@ body {
   opacity: 1;
   width: 30%;
   padding: 70px 100px;
-  z-index: 1;
+  z-index: 9999;
 }
 #bg0  ul {
   position: relative;
