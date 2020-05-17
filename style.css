@@ -388,4 +388,12 @@ letter-spacing: 1px;
     line-height: 40px;
   }
 }
+@media (min-height: 1000px) {
+  .about .container {
+    margin-top: 400px;
+  }
+  .services .container {
+    margin-top: 240px;
+  }
+}
 }
