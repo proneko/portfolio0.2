@@ -141,8 +141,8 @@ body {
   border-bottom: 5px solid rgb(80, 155, 199);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  -webkit-animation: sdb 2s infinite;
-  animation: sdb 2s infinite;
+  -webkit-animation: sdb 4s infinite;
+  animation: sdb 4s infinite;
   opacity: 0;
   box-sizing: border-box;
 }
@@ -436,6 +436,7 @@ letter-spacing: 1px;
   }
   .services .container .serviceBx img {
     max-width: 50px;
+    margin-bottom: -10px;
   }
   .services .container {
     margin-top: 10px;
@@ -487,6 +488,9 @@ letter-spacing: 1px;
   }
   #bg2 .container {
     flex-wrap: wrap-reverse;
+  }
+  .about .container .serviceBx img {
+    margin-bottom: -20px;
   }
   .about .container .serviceBx {
     height: 200px;
